@@ -16,5 +16,4 @@ def calculate_trip():
     response = model.generate_content(f"Using the vehicle of {vehicle} Calculate the hrs trip from {origin} to {destination} and calculate the price dont include any other text just estimate it and calculate the budget that will be spent even not accurate")
     return jsonify({"estimated_time": response.text})
     
-if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+
