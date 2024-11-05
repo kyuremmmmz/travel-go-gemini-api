@@ -2,8 +2,8 @@ import google.generativeai as genai
 import os
 from flask import Flask, request, jsonify
 app = Flask(__name__)
-api_key = os.getenv("AIzaSyClrc7hKPwYWPsvyMds4Y48ltUakzCFau8")
-genai.configure(api_key="AIzaSyClrc7hKPwYWPsvyMds4Y48ltUakzCFau8")
+api_key = os.getenv("")
+genai.configure(api_key="")
 model = genai.GenerativeModel("gemini-1.5-flash")
 response = model.generate_contentresponse = model.generate_content(f"Calculate the hrs trip from Manila to Pangasinan and calculate the price dont include any other text just estimate it and calculate the budget that will be spent even not accurate")
 
